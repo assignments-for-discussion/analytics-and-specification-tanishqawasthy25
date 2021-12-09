@@ -1,4 +1,4 @@
-const average = (numbers) => {
+function average(numbers) {
     const sumTotal =  numbers.reduce((acc, curr) => {
         return Number(acc) + Number(curr);
     }, 0);

@@ -1,15 +1,14 @@
 function average(numbers) {
-   if (numbers?.length)
+   let sum =0;
+   let i=0;
+   while(i<numbers.length)
    {
-    const sumTotal =  numbers.reduce((acc, curr) => {
-        return Number(acc) + Number(curr);
-    }, 0);
-    return sumTotal/numbers.length;
+      if(numbers[i]!==NaN)
+      {
+         sum=sum+numbers[i++];
+      }
    }
-   else
-   {
-       return 0;
-   }
+   return sum/numbers.length;
 }
 
 module.exports={average}

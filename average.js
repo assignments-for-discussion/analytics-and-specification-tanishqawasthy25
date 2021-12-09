@@ -1,12 +1,16 @@
 function average(numbers) {
+    if(!numbers?.length)
+    {
+        return NaN;
+    }
     
-    let count=0;
+    let count=1;
     let sumTotal = numbers.reduce((p, c) => {
         if(isNaN(c)){
-            return Number(p);
+            return p;
         }else{
              count++;
-            return Number(p) + Number(c);
+            return p + c;
            
         }
         

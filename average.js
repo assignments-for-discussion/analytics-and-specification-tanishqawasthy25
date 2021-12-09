@@ -1,7 +1,7 @@
 function average(numbers) {
-    let sumTotal;
+    
     let count=0;
-    numbers.reducer((p, c) => {
+    let sumTotal = numbers.reduce((p, c) => {
         if(isNaN(c)){
             return Number(p);
         }else{

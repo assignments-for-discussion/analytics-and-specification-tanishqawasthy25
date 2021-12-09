@@ -4,3 +4,5 @@ const average = (numbers) => {
     }, 0);
     return sumTotal/numbers?.length;
 }
+
+module.exports={average}

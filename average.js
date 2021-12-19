@@ -1,11 +1,11 @@
 function average(ints) {
   let len = 1;
-  ints = ints.filter((x) => !isNaN(x));
+  ints = ints.filter((a) => !isNaN(a));
   if (ints.length == 0) return NaN;
-  const sm = ints.reduce((x, y) => {
+  const sum1 = ints.reduce((a, b) => {
     len++;
-    return x + y;
+    return a+b;
   });
-  return sm / len;
+  return sum1 / len;
 }
 module.exports = {average};
